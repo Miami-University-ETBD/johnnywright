@@ -23,14 +23,14 @@
         <h2>Shop Our Hat Collection</h2>
         <ul>
             <li><b>High-Quality Materials</b> - <i>Durable fabrics for long-lasting wear.</i></li>
-            <li><u>Trendy Designs</u> - <i>Stay stylish in every season.</i></li>
+            <li><b>Trendy Designs</b> - <i>Stay stylish in every season.</i></li>
             <li><b>Various Styles</b> - <i>From casual to formal looks.</i></li>
-            <li><u>Adjustable Sizes</u> - <i>Perfect fit for everyone.</i></li>
+            <li><b>Adjustable Sizes</b> - <i>Perfect fit for everyone.</i></li>
             <li><b>Fast Shipping</b> - <i>Get your order delivered quickly</i>.</li>
         </ul>
         
         <div class="product-item">
-            <img src="baseball_cap.jpg" alt="Baseball Cap">
+            <img src="images/IMG_4416.jpeg" alt="Baseball Cap">
             <h3><u>Baseball Cap</u></h3>
             <p>Classic and stylish, perfect for everyday wear.</p>
             <p><strong>$19.99</strong></p>
@@ -38,7 +38,7 @@
         </div>
         
         <div class="product-item">
-            <img src="beanie.jpg" alt="Warm Beanie">
+            <img src="images/IMG_4415.jpeg" alt="Warm Beanie">
             <h3><u>Warm Beanie</u></h3>
             <p>Stay warm in colder weather.</p>
             <p><strong>$14.99</strong></p>
@@ -46,7 +46,7 @@
         </div>
         
         <div class="product-item">
-            <img src="trucker_hat.jpg" alt="Trucker Hat">
+            <img src="images/truckerhat.jpeg" alt="Trucker Hat">
             <h3><u>Trucker Hat</u></h3>
             <p>Looking like you just got off the highway stop.</p>
             <p><strong>$19.99</strong></p>
@@ -54,9 +54,9 @@
         </div>
         
         <div class="product-item">
-            <img src="visor.jpg" alt="Visor">
-            <h3><u>Visor</u></h3>
-            <p>Just because the tennis players weaar them doesn't mean you can't</p>
+            <img src="images/IMG_4414.jpeg" alt="Bucket Hat">
+            <h3><u>Bucket Hat</u></h3>
+            <p>Look fly while keeping your face out of the sun, or you can let it shine</p>
             <p><strong>$14.99</strong></p>
             <button><b>Add to Cart</b></button>
         </div>
@@ -90,7 +90,7 @@
             <td>⭐⭐⭐⭐</td>
         </tr>
         <tr>
-            <td><i>Visor</i></td>
+            <td><i>Bucket Hat</i></td>
             <td><b>$14.99</b></td>
             <td>Sport Wear</td>
             <td>⭐⭐⭐⭐⭐</td>
@@ -98,9 +98,38 @@
     </table>
 
     <footer>
-        <p>&copy; 2025 <i>Good Looks</i>. All Rights Reserved.</p>
+        <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
         <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+        <p>📞 Contact us: <b>740-321-1148</b></p>
+        <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
     </footer>
+
+    <!-- JavaScript for button interaction and hover effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".product-item button");
+            const images = document.querySelectorAll(".product-item img");
+
+            // Add to Cart button interaction
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    alert("Item added to cart!");
+                });
+            });
+
+            // Hover effect on product images
+            images.forEach(image => {
+                image.addEventListener("mouseover", function () {
+                    image.style.transform = "scale(1.1)";
+                    image.style.transition = "transform 0.3s ease-in-out";
+                });
+
+                image.addEventListener("mouseout", function () {
+                    image.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 

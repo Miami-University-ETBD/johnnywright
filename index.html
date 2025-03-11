@@ -58,7 +58,40 @@
     </table>
     
     <footer>
-        <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
+            <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+            <p>📞 Contact us: <b>740-321-1148</b></p>
+            <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
+        </footer>
+    
+        <!-- JavaScript for button interaction and hover effect -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const buttons = document.querySelectorAll(".product-item button");
+                const images = document.querySelectorAll(".product-item img");
+    
+                // Add to Cart button interaction
+                buttons.forEach(button => {
+                    button.addEventListener("click", function () {
+                        alert("Item added to cart!");
+                    });
+                });
+    
+                // Hover effect on product images
+                images.forEach(image => {
+                    image.addEventListener("mouseover", function () {
+                        image.style.transform = "scale(1.1)";
+                        image.style.transition = "transform 0.3s ease-in-out";
+                    });
+    
+                    image.addEventListener("mouseout", function () {
+                        image.style.transform = "scale(1)";
+                    });
+                });
+            });
+        </script>
+
+    
 </body>
 </html>

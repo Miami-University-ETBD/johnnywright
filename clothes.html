@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="clothes.html"><u>Clothes</u></a></li>
                 <li><a href="hats.html">Hats</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -28,9 +28,9 @@
             <li><b>Affordable Pricing</b> - <i>Look great without breaking the bank.</i></li>
             <li><b>Fast Shipping</b> - <i>Get your order delivered quickly</i>.</li>
         </ul>
-        
+
         <div class="product-item">
-            <img src="tshirt.jpg" alt="Casual T-Shirt">
+            <img src="images/IMG_4417.jpeg" alt="Casual T-Shirt"/>
             <h3><u>Casual T-Shirt</u></h3>
             <p>Comfortable and stylish casual wear.</p>
             <p><strong>$15.99</strong></p>
@@ -38,7 +38,7 @@
         </div>
         
         <div class="product-item">
-            <img src="fleece.jpg" alt="Fleece Pullover">
+            <img src="images/IMG_4418.jpeg" alt="Fleece Pullover"/>
             <h3><u>Fleece Pullover</u></h3>
             <p>Perfect for layering in all seasons.</p>
             <p><strong>$39.99</strong></p>
@@ -46,18 +46,18 @@
         </div>
         
         <div class="product-item">
-            <img src="hoodie.jpg" alt="Hoodie">
+            <img src="images/IMG_4419.jpeg" alt="Hoodie">
             <h3><u>Hoodie</u></h3>
             <p>Top-of-the-line comfort and warmth.</p>
             <p><strong>$39.99</strong></p>
             <button><b>Add to Cart</b></button>
         </div>
-        
+
         <div class="product-item">
-            <img src="jeans.jpg" alt="Classic Denim Jeans">
+            <img src="images/IMG_4420.jpeg" alt="Sweatpants">
             <h3><u>Soft Sweatpants</u></h3>
             <p>Only the most comfortable covers for your legs</p>
-            <p><strong>$49.99</strong></p>
+            <p><strong>$29.99</strong></p>
             <button><b>Add to Cart</b></button>
         </div>
     </section>
@@ -100,6 +100,37 @@
     <footer>
         <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
         <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+        <p>📞 Contact us: <b>740-321-1148</b></p>
+        <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
     </footer>
+
+    <!-- JavaScript for button interaction and hover effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".product-item button");
+            const images = document.querySelectorAll(".product-item img");
+
+            // Add to Cart button interaction
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    alert("Item added to cart!");
+                });
+            });
+
+            // Hover effect on product images
+            images.forEach(image => {
+                image.addEventListener("mouseover", function () {
+                    image.style.transform = "scale(1.1)";
+                    image.style.transition = "transform 0.3s ease-in-out";
+                });
+
+                image.addEventListener("mouseout", function () {
+                    image.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
+
