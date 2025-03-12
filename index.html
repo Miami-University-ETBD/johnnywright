@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="index.html"><u>Home</u></a></li>
                 <li><a href="clothes.html">Clothes</a></li>
-                <li><a href="hats.html">hats</a></li>
+                <li><a href="hats.html">Hats</a></li>
             </ul>
         </nav>
     </header>
@@ -33,32 +33,65 @@
     <aside>
         <h2>Special Offers</h2>
         <ul>
-            <li><b>20% off</b> on your first order</li>
-            <li>Free shipping on orders over $50</li>
+            <li><b><u>20% off</u></b> on your first order</li>
+            <li><i>Free shipping</i> on orders over $50</li>
         </ul>
     </aside>
     
     <table>
-        <caption>Our Best Sellers</caption>
+        <caption><u>Our Best Sellers</u></caption>
         <tr>
             <th>Product</th>
             <th>Price</th>
             <th>Category</th>
         </tr>
         <tr>
-            <td>Casual T-Shirt</td>
-            <td>$15.99</td>
+            <td>Casual <i>T-Shirt</i></td>
+            <td><b>$15.99</b></td>
             <td>Casual Wear</td>
         </tr>
         <tr>
-            <td>Denim Jacket</td>
-            <td>$39.99</td>
+            <td>Casual Hoodie</td>
+            <td><b>$39.99</b></td>
             <td>Outerwear</td>
         </tr>
     </table>
     
     <footer>
-        <p>&copy; 2025 Shop Good Looks. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
+            <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+            <p>📞 Contact us: <b>740-321-1148</b></p>
+            <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
+        </footer>
+    
+        <!-- JavaScript for button interaction and hover effect -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const buttons = document.querySelectorAll(".product-item button");
+                const images = document.querySelectorAll(".product-item img");
+    
+                // Add to Cart button interaction
+                buttons.forEach(button => {
+                    button.addEventListener("click", function () {
+                        alert("Item added to cart!");
+                    });
+                });
+    
+                // Hover effect on product images
+                images.forEach(image => {
+                    image.addEventListener("mouseover", function () {
+                        image.style.transform = "scale(1.1)";
+                        image.style.transition = "transform 0.3s ease-in-out";
+                    });
+    
+                    image.addEventListener("mouseout", function () {
+                        image.style.transform = "scale(1)";
+                    });
+                });
+            });
+        </script>
+
+    
 </body>
 </html>

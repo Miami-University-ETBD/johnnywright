@@ -62,3 +62,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.product-item img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
