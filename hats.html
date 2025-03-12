@@ -12,9 +12,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Clothes.html">Clothes</a></li>
-                
-                
+                <li><a href="clothes.html">Clothes</a></li>
+                <li><a href="hats.html"><u>Hats</u></a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +21,7 @@
     <section class="products">
         <h2>Shop Our Hat Collection</h2>
         <div class="product-item">
-            <img src="baseball_cap.jpg" alt="Baseball Cap">
+            <img src="images/IMG_4416.jpeg" alt="Baseball Cap">
             <h3>Baseball Cap</h3>
             <p>Classic and stylish, perfect for everyday wear.</p>
             <p><strong>$19.99</strong></p>
@@ -30,7 +29,7 @@
         </div>
         
         <div class="product-item">
-            <img src="beanie.jpg" alt="Warm Beanie">
+            <img src="images/IMG_4415.jpeg" alt="Warm Beanie">
             <h3>Warm Beanie</h3>
             <p>Stay warm and cozy in colder weather.</p>
             <p><strong>$14.99</strong></p>
@@ -38,17 +37,56 @@
         </div>
         
         <div class="product-item">
-            <img src="fedora.jpg" alt="Stylish Fedora">
+            <img src="images/truckerhat.jpeg" alt="Trucker Hat">
             <h3>Trucker Hat</h3>
             <p>Looking like you just got off the stop.</p>
             <p><strong>$19.99</strong></p>
             <button>Add to Cart</button>
         </div>
+
+        <div class="product-item">
+            <img src="images/IMG_4414.jpeg" alt="Bucket Hat">
+            <h3>Trucker Hat</h3>
+            <p>Keep your face in the shade, or not</p>
+            <p><strong>$19.99</strong></p>
+            <button>Add to Cart</button>
+        </div>
+
+
     </section>
     
     <footer>
         <p>&copy; 2025 Good Looks. All Rights Reserved.</p>
-        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+        <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+        <p>📞 Contact us: <b>740-321-1148</b></p>
+        <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
     </footer>
+
+    <!-- JavaScript for button interaction and hover effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".product-item button");
+            const images = document.querySelectorAll(".product-item img");
+
+            // Add to Cart button interaction
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    alert("Item added to cart!");
+                });
+            });
+
+            // Hover effect on product images
+            images.forEach(image => {
+                image.addEventListener("mouseover", function () {
+                    image.style.transform = "scale(1.1)";
+                    image.style.transition = "transform 0.3s ease-in-out";
+                });
+
+                image.addEventListener("mouseout", function () {
+                    image.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
 </body>
 </html>
