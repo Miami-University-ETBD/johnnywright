@@ -1,97 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Clothing Store</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Clothing Store</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Shop Good Looks</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"><u>Home</u></a></li>
-                <li><a href="clothes.html">Clothes</a></li>
-                <li><a href="hats.html">Hats</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="main-content">
-        <h2>Welcome to Shop Good Looks</h2>
-        <p> Welcome to Good Looks, where fashion meets effortless confidence. We believe that style isn’t just about what you wear—it’s about how you feel. That’s why we curate a collection of trend-forward, high-quality apparel designed to make you look and feel your best, whether you're dressing up for a night out or keeping it casual on the go.
+  <header>
+    <h1>Shop Good Looks</h1>
+    <nav class="blue">
+      <ul>
+        <li><a href="index.html"><u>Home</u></a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="hats.html">Hats</a></li>
+        <li><a href="materialize.html">Materialize</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            From sleek, modern essentials to bold statement pieces, Good Looks has something for every wardrobe. Our designs blend comfort, versatility, and a touch of edge, so you can move through your day with ease and style. With an eye on the latest fashion trends and a commitment to quality craftsmanship, we ensure that every piece is made to last.
-            
-            At Good Looks, we celebrate individuality and self-expression. Fashion is more than just clothing—it’s a way to showcase your personality and make an impression. That’s why we offer a carefully curated selection of men’s and women’s apparel that balances timeless classics with contemporary flair.
-            
-            Whether you're searching for the perfect fit, the latest must-have, or an everyday staple, we’ve got you covered. Elevate your wardrobe with Good Looks—because looking good is always in style. <em>Stay fashionable</em> with our newest arrivals and enjoy exclusive discounts.</p>
-    </section>
-    
-    <aside>
-        <h2>Special Offers</h2>
-        <ul>
-            <li><b><u>20% off</u></b> on your first order</li>
-            <li><i>Free shipping</i> on orders over $50</li>
-        </ul>
-    </aside>
-    
-    <table>
-        <caption><u>Our Best Sellers</u></caption>
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Category</th>
-        </tr>
-        <tr>
-            <td>Casual <i>T-Shirt</i></td>
-            <td><b>$15.99</b></td>
-            <td>Casual Wear</td>
-        </tr>
-        <tr>
-            <td>Casual Hoodie</td>
-            <td><b>$39.99</b></td>
-            <td>Outerwear</td>
-        </tr>
-    </table>
-    
-    <footer>
-        <footer>
-            <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
-            <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
-            <p>📞 Contact us: <b>740-321-1148</b></p>
-            <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
-        </footer>
-    
-        <!-- JavaScript for button interaction and hover effect -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const buttons = document.querySelectorAll(".product-item button");
-                const images = document.querySelectorAll(".product-item img");
-    
-                // Add to Cart button interaction
-                buttons.forEach(button => {
-                    button.addEventListener("click", function () {
-                        alert("Item added to cart!");
-                    });
-                });
-    
-                // Hover effect on product images
-                images.forEach(image => {
-                    image.addEventListener("mouseover", function () {
-                        image.style.transform = "scale(1.1)";
-                        image.style.transition = "transform 0.3s ease-in-out";
-                    });
-    
-                    image.addEventListener("mouseout", function () {
-                        image.style.transform = "scale(1)";
-                    });
-                });
-            });
-        </script>
+  <section class="main-content">
+    <h2>Welcome to Shop Good Looks</h2>
+    <p>
+        Welcome to Good Looks, where fashion meets effortless confidence. We believe that style isn’t just about what you wear—it’s about how you feel. That’s why we curate a collection of trend-forward, high-quality apparel designed to make you look and feel your best, whether you're dressing up for a night out or keeping it casual on the go.
 
-    
+        From sleek, modern essentials to bold statement pieces, Good Looks has something for every wardrobe. Our designs blend comfort, versatility, and a touch of edge, so you can move through your day with ease and style. With an eye on the latest fashion trends and a commitment to quality craftsmanship, we ensure that every piece is made to last.
+
+        At Good Looks, we celebrate individuality and self-expression. Fashion is more than just clothing—it’s a way to showcase your personality and make an impression. That’s why we offer a carefully curated selection of men’s and women’s apparel that balances timeless classics with contemporary flair.
+
+        Whether you're searching for the perfect fit, the latest must-have, or an everyday staple, we’ve got you covered. Elevate your wardrobe with Good Looks—because looking good is always in style. <em>Stay fashionable</em> with our newest arrivals and enjoy exclusive discounts.
+    </p>
+
+    <!-- Collapsible section -->
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">camera_alt</i>About our Photos</div>
+        <div class="collapsible-body"><span>All photos of our clothes are taken with the best lighting and camera work to show you what they truly look like.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">attach_money</i>Cost</div>
+        <div class="collapsible-body"><span>All of our clothes are priced at the best possible price point giving you an amazing deal for amazing clothes.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">settings</i>Options</div>
+        <div class="collapsible-body"><span>If anything is wrong look to the bottom of the page to reach out for help, or go to the Materialze page for more ways to contact us.</span></div>
+      </li>
+    </ul>
+
+    <!-- Carousel section -->
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="images/IMG_4413.jpeg" /></a>
+      <a class="carousel-item" href="#two!"><img src="images/IMG_4414.jpeg" /></a>
+      <a class="carousel-item" href="#three!"><img src="images/IMG_4417.jpeg" /></a>
+      <a class="carousel-item" href="#four!"><img src="images/IMG_4418.jpeg" /></a>
+      <a class="carousel-item" href="#five!"><img src="images/IMG_4420.jpeg" /></a>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Special Offers</h2>
+    <ul>
+      <li><b><u>20% off</u></b> on your first order</li>
+      <li><i>Free shipping</i> on orders over $50</li>
+    </ul>
+  </aside>
+
+  <table>
+    <caption><u>Our Best Sellers</u></caption>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Category</th>
+    </tr>
+    <tr>
+      <td>Casual T-Shirt</td>
+      <td><b>$15.99</b></td>
+      <td>Casual Wear</td>
+    </tr>
+    <tr>
+      <td>Casual Hoodie</td>
+      <td><b>$39.99</b></td>
+      <td>Outerwear</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
+    <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+    <p>📞 Contact us: <b>740-321-1148</b></p>
+    <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
+  </footer>
+
+  <!-- jQuery + Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- JavaScript for interaction -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".product-item button");
+      const images = document.querySelectorAll(".product-item img");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", function () {
+          alert("Item added to cart!");
+        });
+      });
+
+      images.forEach(image => {
+        image.addEventListener("mouseover", function () {
+          image.style.transform = "scale(1.1)";
+          image.style.transition = "transform 0.3s ease-in-out";
+        });
+
+        image.addEventListener("mouseout", function () {
+          image.style.transform = "scale(1)";
+        });
+      });
+
+      // Initialize collapsible
+      var collapsibles = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(collapsibles);
+
+      // Initialize carousel
+      var carousels = document.querySelectorAll('.carousel');
+      M.Carousel.init(carousels);
+    });
+  </script>
 </body>
 </html>

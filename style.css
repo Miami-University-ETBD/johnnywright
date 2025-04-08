@@ -69,3 +69,42 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
+/* Collapsible container */
+.collapsible {
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* Collapsible header style */
+  .collapsible-header {
+    background-color: #2018f9;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .collapsible-header i {
+    color: #ffffff; /* soft pink accent */
+    margin-right: 10px;
+  }
+  
+  .collapsible-header:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+  }
+  
+  /* Collapsible body */
+  .collapsible-body {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    color: #555;
+  }
+  
