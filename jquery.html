@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Good Looks – jQuery Features</title>
+
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Custom jQuery Interactions -->
+  <script>
+    $(document).ready(function(){
+      // Slide panel
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+
+      // Table filter
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+      });
+
+      // Form field highlights
+      $("input").focus(function(){
+        $(this).css("background-color", "#fff59d");
+      }).blur(function(){
+        $(this).css("background-color", "#c8e6c9");
+      });
+    });
+  </script>
+
+  <style>
+    #flip, #panel {
+      padding: 10px;
+      text-align: center;
+      background-color: #2898f4;
+      border: 1px solid #2898f4;
+      margin: 20px 0;
+    }
+
+    #panel {
+  display: none;
+  background-color: #2898f4; 
+    }
+
+    table {
+      margin-top: 30px;
+    }
+
+    .raffle-form {
+  color: #111; /* dark gray or use black with #000 */
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="center-align">Shop Good Looks</h1>
+    <nav class="blue">
+      <ul class="center-align">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="hats.html">Hats</a></li>
+        <li><a href="materialize.html">Materialize</a></li>
+        <li><a href="jquery.html"><u>JQuery</u></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <h2 class="center-align">Interactive jQuery Features</h2>
+
+    <!-- Slide Panel -->
+    <div id="flip" class="z-depth-1">Read More About Who We Are</div>
+    <div id="panel" class="z-depth-1">At Good Looks, our mission is to empower confidence through fashion. We believe that looking good isn’t just about trends—it’s about self-expression, comfort, and owning your style. That’s why we create clothing that blends modern design with everyday wearability, helping you show up as your best self wherever life takes you.
+
+        We’re committed to providing high-quality, affordable fashion that reflects individuality and inspires boldness. Whether you’re dressing up or keeping it casual, Good Looks is here to help you make a statement—because when you look good, you feel unstoppable.</div>
+
+    <!-- Filterable Table -->
+    <h5>Search Our Products</h5>
+    <input id="myInput" type="text" placeholder="Search for names or types..." class="input-field">
+
+    <table class="striped highlight">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Type</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr><td>Casual T-Shirt</td><td>Clothes</td><td>$15.99</td></tr>
+        <tr><td>Fleece Pullover</td><td>Clothes</td><td>$39.99</td></tr>
+        <tr><td>Hoodie</td><td>Clothes</td><td>$39.99</td></tr>
+        <tr><td>Sweatpants</td><td>Clothes</td><td>$29.99</td></tr>
+        <tr><td>Baseball Cap</td><td>Hat</td><td>$19.99</td></tr>
+        <tr><td>Warm Beanie</td><td>Hat</td><td>$14.99</td></tr>
+        <tr><td>Trucker Hat</td><td>Hat</td><td>$19.99</td></tr>
+        <tr><td>Bucket Hat</td><td>Hat</td><td>$14.99</td></tr>
+
+      </tbody>
+    </table>
+
+    <!-- Raffle Form -->
+    <div class="raffle-form card-panel">
+      <h5>Enter Our T-Shirt Raffle</h5>
+      <p>Submit your info for a chance to win a free Good Looks shirt!</p>
+      <form>
+        <div class="input-field">
+          <input type="text" name="fullname" id="fullname">
+          <label for="fullname">Full Name</label>
+        </div>
+        <div class="input-field">
+          <input type="email" name="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn blue">Submit Entry</button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <p>&copy; 2025 <i>Shop Good Looks</i>. All Rights Reserved.</p>
+      <p>Follow us on <b><i>Instagram</i></b>, <b><i>Facebook</i></b>, and <b><i>Twitter</i></b> for the latest updates!</p>
+      <p>📞 Contact us: <b>740-321-1148</b></p>
+      <p>Shop on Depop: <a href="https://depop.com/" target="_blank"><b>Click Here</b></a></p>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
